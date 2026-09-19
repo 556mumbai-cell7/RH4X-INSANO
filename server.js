@@ -38,7 +38,7 @@ function admin(req, res, next) {
 }
 
 app.get('/', (req, res) => {
-    res.json({ sistema: 'RH4X INSANO', status: 'online', banco: redis && redis.isOpen ? 'redis-on' : 'redis-off' });
+    res.json({ sistema: 'RH4X INSANO @SAMUELDOSSCRIPTS', status: 'online', banco: redis && redis.isOpen ? 'redis-on' : 'redis-off' });
 });
 
 app.post('/gerar', admin, async (req, res) => {
@@ -134,5 +134,5 @@ app.post('/validar', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log('RH4X INSANO rodando na porta ' + PORT);
+    console.log('RH4X INSANO @SAMUELDOSSCRIPTS rodando na porta ' + PORT);
 });
